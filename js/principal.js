@@ -24,7 +24,7 @@ for (let i = 0; i < pacientes.length; i++) {
         tdImc.textContent = "Peso inválido!";
         paciente.classList.add("paciente-invalido");
     }
-    
+
     if (altura <= 0 || altura >= 3.00) {
         console.log("altura inválida");
         alturaEhvalida = false;
@@ -37,3 +37,9 @@ for (let i = 0; i < pacientes.length; i++) {
         tdImc.textContent = imc.toFixed(2);
     }
 }
+
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+botaoAdicionar.addEventListener("click", () => {
+    console.log("botao clicado");
+    
+});
